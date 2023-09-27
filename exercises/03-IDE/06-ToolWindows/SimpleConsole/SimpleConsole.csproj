@@ -57,7 +57,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Fleet.xml" />
+    <Content Include="BigStarCollectibles.xml" />
     <Content Include="ToolWindowState.txt" />
   </ItemGroup>
   <ItemGroup>
