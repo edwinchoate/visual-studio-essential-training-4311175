@@ -57,7 +57,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BigStarCollectibles.xml" />
+    <Content Include="BigStar.xml" />
     <Content Include="ToolWindowState.txt" />
   </ItemGroup>
   <ItemGroup>
