@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ConsoleCSharp
 {
@@ -13,7 +11,8 @@ namespace ConsoleCSharp
 
 			// use the Quick Action (Light Bulb)
 
-			var result = Math.Pow(8, 3); // return the cube of 8.
+			double v = Math.Pow(8, 3);
+			var result = v; // return the cube of 8.
 
 			// var cust = new Customer ();
 			// var serializer = new JsonSerializer();
