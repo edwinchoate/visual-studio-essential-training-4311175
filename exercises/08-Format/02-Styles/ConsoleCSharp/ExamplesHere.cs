@@ -9,7 +9,7 @@ namespace ConsoleCSharp
 		public void UseFormatDocument()
 		{
 			var bookList = new List<string>();
-			var authorList = new List<string>();
+			List<string> authorList = new List<string>();
 
 			bookList.Add("Hiking the hills");
 			authorList.Add("Walt Ritscher");
@@ -27,13 +27,9 @@ namespace ConsoleCSharp
 
 			// without braces
 			if (isPremiumCustomer)
-			{
 				Console.WriteLine("true");
-			}
 			else
-			{
 				Console.WriteLine("false");
-			}
 		}
 
 
