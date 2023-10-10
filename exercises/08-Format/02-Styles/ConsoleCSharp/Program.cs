@@ -4,7 +4,7 @@ namespace ConsoleCSharp
 {
 	class Program
 	{
-		static void Main(string[] args)
+		static void Main()
 		{
 			// the canonical sample code for a new program! (HELLO WORLD)
 			Console.WriteLine("Hello World!");
