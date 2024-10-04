@@ -2,6 +2,8 @@
 ; native .editorconfig settings
 root = true
 
+;  EditorConfig uses an .ini file format
+
 ; Tab Indent
 [*.cs]
 indent_style = Tab
