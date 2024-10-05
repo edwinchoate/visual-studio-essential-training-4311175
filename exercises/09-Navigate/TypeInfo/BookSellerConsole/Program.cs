@@ -14,7 +14,8 @@ namespace BookSellerConsole
 			var dataSource = new PublisherLib.Data.BookDataSource();
 			PublisherLib.Book book = dataSource.GetBestSellingBook();
 			Console.WriteLine($"Title: {book.Title}, Copies Sold:{book.CopiesSold}");
-			
+
+			var max = Math.Max(4, 8);
 			// make a method call to a class
 			book.UpdatePrice(48.95M);
 
