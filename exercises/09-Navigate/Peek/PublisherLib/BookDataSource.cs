@@ -44,7 +44,7 @@ namespace PublisherLib.Data
 		public Book GetBestSellingBook()
 		{
 			var topCount = _books.Max(x => x.CopiesSold);
-			return _books.First(x => x.CopiesSold ==topCount);
+			return _books.First(x => x.CopiesSold ==topCount +1);
 		}
 		public List<Book> GetAllBooks() {
 
