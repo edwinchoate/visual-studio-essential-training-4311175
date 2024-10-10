@@ -22,8 +22,8 @@ namespace PublisherLib
 				Price = newPrice;
 			}
 			// call another method
-			Console.WriteLine("Done");
-			Price = CapPriceAtMaximum(newPrice);
+			//Console.WriteLine("Done");
+			//Price = CapPriceAtMaximum(newPrice);
 		}
 		private decimal CapPriceAtMaximum(decimal currentPrice)
 		{
