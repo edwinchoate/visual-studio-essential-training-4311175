@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DebugWpf"
         mc:Ignorable="d"
 				Title="MainWindow"
-				Width="525"
+				Width="725" WindowStartupLocation='CenterScreen'
 				FontSize='18'>
 	<StackPanel Margin='20,50' 
 							HorizontalAlignment='Center'
