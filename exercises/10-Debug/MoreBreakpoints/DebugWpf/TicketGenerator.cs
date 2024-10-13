@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DebugWpf
 {
-	class TicketGenerator {
+	partial class TicketGenerator {
 
 		public static decimal CalculateTicketPrice(int ticketCount, decimal ticketPrice, decimal discountRate) {
 			return (ticketCount * ticketPrice) * discountRate;

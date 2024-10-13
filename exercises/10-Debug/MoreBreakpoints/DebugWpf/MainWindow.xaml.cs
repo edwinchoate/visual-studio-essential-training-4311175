@@ -27,6 +27,7 @@ namespace DebugWpf
 			colors.Add(new ColorSample { ColorBrush = new SolidColorBrush(Colors.Blue), ColorName = "Blue" });
 			colors.Add(new ColorSample { ColorBrush = new SolidColorBrush(Colors.Orange), ColorName = "Orange" });
 			colors.Add(new ColorSample { ColorBrush = new SolidColorBrush(Colors.Yellow), ColorName = "Yellow" });
+			colors.Add(new ColorSample { ColorBrush = new SolidColorBrush(Colors.Green), ColorName = "Green" });
 			this.DataContext = colors;
 			this.Loaded += MainWindow_Loaded;
 		}
@@ -34,8 +35,7 @@ namespace DebugWpf
 		{
 			ColorsListBox.SelectedIndex = 0;
 		}
-		private void ConditionalButton_Click(object sender, RoutedEventArgs e)
-		{
+		private void ColorsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
 			var currentColor = ColorsListBox.SelectedItem as ColorSample;
 			ellipse1.Fill = currentColor.ColorBrush;
 		}
@@ -55,16 +55,22 @@ namespace DebugWpf
 		{
 			int ticketCount;
 			ticketCount = TicketGenerator.GetTicketCount();
-			ticketCount = TicketGenerator.GetTicketCount(eventName: "Portland Bike Tour");
-			ticketCount = 0;
+			TicketCountTextBlock.Text = $"ticketCount(), result = {ticketCount}";
 
-			ticketCount = TicketGenerator.GetTicketCount(isLocal: true);
 
+			
 		}
 		private void AnotherFunctionButton_Click(object sender, RoutedEventArgs e)
 		{
 			int ticketCount;
+			ticketCount = TicketGenerator.GetTicketCount(isLocal: true);
+			TicketCountTextBlock.Text = $"ticketCount(bool), result = {ticketCount}";
+		}
+
+		private void FunctionButton3_Click(object sender, RoutedEventArgs e) {
+			int ticketCount;
 			ticketCount = TicketGenerator.GetTicketCount(eventName: "Portland Bike Tour");
+			TicketCountTextBlock.Text = $"ticketCount(string), result = {ticketCount}";
 		}
 	}
 }
