@@ -46,6 +46,8 @@ namespace DebugWpf
 																								 loanRate: rate,
 																								 loanAmount: 3700);
 
+			var dailyAverage = monthlyPayment / 30;
+
 		}
 	}
 }
