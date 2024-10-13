@@ -40,7 +40,6 @@ namespace DebugWpf
 																									 loanRate: rate,
 																									 loanAmount: 2800);
 
-
 			// step out;
 			monthlyPayment = Financial.CalculateMonthlyPayment(numberOfMonths: 36,
 																								 loanRate: rate,
