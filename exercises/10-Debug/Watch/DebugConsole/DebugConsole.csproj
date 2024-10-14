@@ -5,4 +5,14 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="BookList.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="BookList.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

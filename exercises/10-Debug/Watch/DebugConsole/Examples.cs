@@ -1,32 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace DebugWpf
-{
-	/// <summary>
-	/// Interaction logic for MainWindow.xaml
-	/// </summary>
-	public partial class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-		}
-		private void DemoButton_Click(object sender, RoutedEventArgs e)
-		{
-			ExampleMethod();
+namespace DebugConsole {
+	internal class Examples {
 
-		}
-
-		private void ExampleMethod()
-		{
+		public void DebugThis() {
 			// another way to add a breakpoint within code
 			if (System.Diagnostics.Debugger.IsAttached)
 			{
 				System.Diagnostics.Debugger.Break();
 			}
-			
+
 			// C# primitive variable type (float, double, short, int, long etc..)
 
 			string sentence = "One word after another.";
@@ -48,15 +35,14 @@ namespace DebugWpf
 
 			WorkWithXmlData("BookList.xml", true);
 			#region Message
-			
-			messageTextBlock.Text = sentence;
+
+			var message = sentence;
 			// look at the "return" value in the locals window.
-			messageTextBlock.Text = taxRate.ToString();
-			messageTextBlock.Text = GetBookName();
+			message = taxRate.ToString();
+			message = GetBookName();
 			#endregion
 		}
-		private void WorkWithXmlData(string xmlFileName, bool useSchema)
-		{
+		private void WorkWithXmlData(string xmlFileName, bool useSchema) {
 			// the locals and Autos window will show
 			// variables from this method
 
@@ -68,9 +54,9 @@ namespace DebugWpf
 		}
 	}
 
-	public class Book
-	{
+	public class Book {
 		public string Title { get; set; }
 		public decimal Price { get; set; }
 	}
 }
+
