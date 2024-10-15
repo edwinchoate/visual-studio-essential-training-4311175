@@ -6,7 +6,7 @@
 				xmlns:local="clr-namespace:DebugWpf"
 				mc:Ignorable="d"
 				Title="MainWindow"
-				Width="700"
+				Width="700" WindowState='Maximized'
 				FontSize='14'>
 	<StackPanel Margin='80,50'
 							HorizontalAlignment='Stretch'>

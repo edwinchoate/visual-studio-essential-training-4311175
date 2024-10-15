@@ -37,6 +37,7 @@ namespace DebugWpf
 		}
 		private void ColorsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e) {
 			var currentColor = ColorsListBox.SelectedItem as ColorSample;
+
 			ellipse1.Fill = currentColor.ColorBrush;
 		}
 		private async void HitCountButton_Click(object sender, RoutedEventArgs e)

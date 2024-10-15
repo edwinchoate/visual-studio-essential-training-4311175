@@ -17,7 +17,7 @@ namespace DebugConsole {
 			// C# primitive variable type (float, double, short, int, long etc..)
 
 			string sentence = "One word after another.";
-			double taxRate = 7.8;
+			decimal taxRate = 0.078M;
 
 
 			// types with more properties
