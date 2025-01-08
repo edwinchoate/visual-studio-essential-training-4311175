@@ -103,5 +103,29 @@ The References in the Project file XML can also be viewed in the Solution Explor
   </ItemGroup>
 ``` 
 
+_Startup project_ - You can change this via Right-click -> Set as Startup Project
+
+_Output type_ - This tells you what type the project is: Console app vs. Windows Application vs. Class Library, etc. You can view this at the project level: Right-click on Project -> Properties -> Output type
+
+Put a panel back in its original position: CTRL+Double-click on title bar
+
+You can Right-click -> Properties on anything in the Solution Explorer
+
+Add a new/existing Project to a Solution: Right-click on Solution (in Solution Explorer) -> Add -> New/Existing Project
+
+Folder View
+
+* in VS, you can switch to a much more literal view of the files in the filesystem in the Solution Explorer
+* Solution Explorer > [Icon] Switch between solution and available views > Folder View
+* To see hidden files (e.g. /obj, /bin), click on [Icon] Show All Files at the top of the Solution Explorer
+
+There a Collapse All button at the top of Solution Explorer
+
+_Right-click -> Scope to This_ - This sets the top-level context of the Solution Explorer to any Project/folder. You can press the little home or little back button at the top of Solution Explorer to undo.
+
+_Window_ > _Reset Window Layout_ sets the Visual Studio layout back to default factory settings. You can also Save and Apply your own windows layouts.
+
+_CodeLens_ - the feature that displays "X references", etc. inline in your code. You can turn this off.
+
 ---
 End of document
