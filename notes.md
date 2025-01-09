@@ -127,5 +127,17 @@ _Window_ > _Reset Window Layout_ sets the Visual Studio layout back to default f
 
 _CodeLens_ - the feature that displays "X references", etc. inline in your code. You can turn this off.
 
+You can Import/Export all of your VS settings
+
+* Tools > Import and Export Settings...
+    * Import selected environment settings
+    * Export selected environment settings
+    * Reset all settings
+    * `.vssettings` file
+
+`F9` adds a breakpoint to the current line (where the cursor is)
+
+CTRL+Q launch the Settings search
+
 ---
 End of document
