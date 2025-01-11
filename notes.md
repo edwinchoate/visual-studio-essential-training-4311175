@@ -139,5 +139,48 @@ You can Import/Export all of your VS settings
 
 CTRL+Q launch the Settings search
 
+Region syntax
+
+```C#
+#region MyRegionName
+    ...
+#endregion
+```
+
+**Stub interface implementation** You can stub out all of the implemented methods of an interface in one click with Quick Actions (lightbulb icon)
+
+**Preview method signatures** CTRL+SHIFT+SPACEBAR inside of the parentheses of a method launches a flyout that lets you cycle through all of the method signatures for that method
+
+**Automatically complete symbol** CTRL+SPACEBAR finishes typing an incomplete symbol. This feature is called Complete Word
+
+**Refactor order of parameters** (with cursor in method parentheses), Right-click -> Quick Actions and Refactorings -> Change signature... To change the order of the params in a method signature, and have that change be reflected everywhere in the code.
+
+A Code Snippet is a small bit of generate code that results from a shortcut code (ex: `cw`, `ctor`, `for`). 
+
+Examples of useful code snippets: 
+
+```C#
+// `cw` generates: 
+Console.WriteLine();
+
+// `ctor` generates: 
+public MyClass () 
+{
+
+}
+
+// `for` generates: 
+for (int i = 0; i < length; i++)
+{
+
+}
+```
+
+Code snippets are also interactive, so you can tab through the code generated to fill in the pertinent variables and values. 
+
+See all of the Code Snippets in the system: 
+
+* Tools -> Code Snippets Manager
+
 ---
 End of document
