@@ -182,5 +182,34 @@ See all of the Code Snippets in the system:
 
 * Tools -> Code Snippets Manager
 
+**Automatic Formatting (Code Style)**
+
+* You can auto apply style rules based on rules defined in settings:
+    * Format entire document: Edit > Advanced > Format Document (CTRL+K, CTRL+D)
+    * Format selection: Edit > Advanced > Format Selection (CTRL+K, CTRL+F)
+* You can set the style rules in: Tools > Options > Text Editor > C# > Code Style
+
+_Code Style_
+
+Visual Studio lets you systematically enforce subjective code style rules. 
+
+* Tools > Options > Text Editor > C# > Code Styles > General
+    * These are rules about when to use things like `var`, parentheses, etc. 
+    * Ex: Namespace declarations Block scope Refactoring only
+* Tools > Options > Text Editor > C# > Code Styles > Naming
+    * These are rules about naming conventions
+    * Ex: Non-Field Members Pascal Case Suggestion
+* You can set the different level of enforcement of these rules of 4 options:
+    1. Refactoring Only
+    2. Suggestion
+    3. Warning
+    4. Error
+* Visual Studio lets you export all of these style decisions as a single `.editorconfig` file
+    * .editorconfig | [editorconfig.org](https://editorconfig.org)
+        * A format supported by many IDEs
+        * You can use a .editorconfig file by placing it in your project's root directory
+        * Visual Studio applies the styles defined by .editorconfig upon Save of a file
+        * The .editorconfig file from the [dotnet/runtime project](https://github.com/dotnet/runtime/blob/main/.editorconfig) is a gold standard that Microsoft uses in their own documentation
+
 ---
 End of document
