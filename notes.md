@@ -211,5 +211,27 @@ Visual Studio lets you systematically enforce subjective code style rules.
         * Visual Studio applies the styles defined by .editorconfig upon Save of a file
         * The .editorconfig file from the [dotnet/runtime project](https://github.com/dotnet/runtime/blob/main/.editorconfig) is a gold standard that Microsoft uses in their own documentation
 
+_Class Designer_
+
+Visual Studio has a tool for class diagrams, _Class Designer_
+
+* To install: Visual Studio Installer -> Individual components -> search for Class Designer
+* Add a new class diagram to a project: Right-click (on Project) -> Add -> New item... -> search "diagram" -> "Class Diagram"
+* `.cd` file extension
+
+_Navigating code_
+
+Right-click -> _Go to Definition_ is very useful
+
+Right-click -> _Peek Definition_ shows a code preview in a flyout without navigating away from the current code file 
+
+Right-click -> _View Call Hierarchy_ shows a tree view of a given method/property and all of the code that calls that object, with the code that call those methods nested underneath, and so on. 
+
+Right-click -> _Find All References_ finds everywhere where a Class (for instance) is being used
+
+CTRL+T launches _Code Search_
+
+CTRL+Q launches _Feature Search_
+
 ---
 End of document
