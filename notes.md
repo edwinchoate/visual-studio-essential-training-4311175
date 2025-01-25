@@ -233,5 +233,65 @@ CTRL+T launches _Code Search_
 
 CTRL+Q launches _Feature Search_
 
+## Debugging
+
+* _Locals_ window displays all local vars in the current scope
+* _Autos_ window displays vars in the current and surrounding line of code
+* _Watch_ windows (1-4) displays var you manually set to watch 
+* _Immediate Window_ is like a live console. you can execute expressions in realtime even with code exec paused in debugging 
+
+Startup Project - the Project that is launched by default when you press the green play icon button
+
+* Right-click -> Set as Startup Project
+
+```C#
+// another way to add a breakpoint within code
+if (System.Diagnostics.Debugger.IsAttached)
+{
+	System.Diagnostics.Debugger.Break();
+}
+```
+
+Breakpoint Settings
+
+* Hover over a breakpoint dot -> Settings
+    * Conditions (bool expressions)
+    * Actions (print statements)
+    * "Disable breakpoint once hit"
+    * "Only enable when the following breakpoint is hit:" (selection from dropdown of breakpoints)
+
+Breakpoint "menu": Right-click on a line of code -> Breakpoint
+
+* Insert Breakpoint
+* Insert Conditional Breakpoint
+* Insert Tracepoint
+* Insert Temporary Breakpoint
+* Insert Dependent Breakpoint
+
+_Step into_ - runs the just next line of code and then stops. It never skips lines. It navigates into every method call. Step into = next line of code in the execution.
+
+_Step out_ - runs the rest of the code in the current method and then jumps up a level to right after the calling code. Step out = rest of this method
+
+_Step over_ - runs all code necessary to get you to the next line of code in the current context and does not step into method calls. Step over = next line of code in this file
+
+> The yellow arrow is _draggable_. You can drag it to any other line of code that will accept a breakpoint to fastfoward/rewind where you are in the code execution while debugging.
+
+* Right-click -> "Set Next Statement": The equivalent to dragging the yellow arrow 
+
+> You can fast-forward debugging to a specific line of code by hovering over that line of code and clicking the green fast-forward icon.
+
+Working with the Watch window(s)
+
+* Adding vars to the Watch window
+    * Right-click -> Add Watch
+    * Or, type var into Watch windows field
+* You can type expressions into the Watch window as well 
+
+Working with the Immediate Window
+
+* Good for getting a one-off value that you don't necessarily want to add to the Watch window
+* You can type variables and get the current value 
+* You can type expressions 
+
 ---
 End of document
