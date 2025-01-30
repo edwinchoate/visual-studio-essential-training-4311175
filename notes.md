@@ -293,5 +293,18 @@ Working with the Immediate Window
 * You can type variables and get the current value 
 * You can type expressions 
 
+> Action Breakpoints and Tracepoints are the same thing
+
+You can add _Hit Count_ to Conditional Breakpoints so that the breakpoint is only triggered the nth time that line runs. 
+
+Breakpoints Window 
+
+* Debug > Windows > Breakpoints (CTRL+Alt+B)
+* View all breakpoints 
+* Jump to breakpoints
+* Enable/disable breakpoints
+* Label and group breakpoints
+* Export breakpoints as XML
+
 ---
 End of document
